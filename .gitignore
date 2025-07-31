@@ -14,9 +14,6 @@ __pycache__/
 *.pid
 *.sock
 
-# Alembic
-alembic/versions/
-
 # VS Code (если используешь)
 .vscode/
 

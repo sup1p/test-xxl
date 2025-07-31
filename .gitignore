@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environment
+.venv/
+.env
+
+# IDEs
+.idea/
+
+# Docker
+*.pid
+*.sock
+
+# Alembic
+alembic/versions/
+
+# VS Code (если используешь)
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.*
+
+# HTTP client test files (опционально)
+*.http

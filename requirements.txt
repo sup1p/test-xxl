@@ -1,0 +1,12 @@
+fastapi[standard]
+uvicorn
+starlette
+sqlalchemy
+pydantic
+python-dotenv
+alembic
+pydantic_settings
+asyncpg
+psycopg2-binary
+pydantic[email]
+aiosmtplib

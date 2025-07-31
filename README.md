@@ -1,6 +1,6 @@
 # OmarTest
 
-Проект на FastAPI + PostgreSQL, с Alembic, асинхронным SQLAlchemy и Docker.
+Проект на FastAPI + PostgreSQL, с Alembic, SQLAlchemy и Docker.
 
 ## 📦 Стек
 
@@ -22,10 +22,10 @@ docker-compose up --build
 .
 ├── app/              # код приложения
 │   ├── main.py       # вход
-│   ├── models/       # SQLAlchemy модели
-│   ├── schemas/      # Pydantic DTO
-│   ├── api/          # роутеры
-│   └── services/     # бизнес-логика
+│   ├── routers/       # routers
+│   ├── core/        #configuration: db settings and etc 
+│   ├── schemas      # Pydantic DTO
+│   └── models    # db-models
 │
 ├── alembic/          # миграции
 ├── Dockerfile
@@ -40,3 +40,7 @@ alembic revision --autogenerate -m "msg"
 alembic upgrade head
 
 Если есть проблемы с алембиком то следует сначало сделать "alembic downgrade base"
+
+Swagger по пути localhost:8002/docs
+
+Для отправки email требуется заполнить данные описанные в .env.example и подключение к интернету
